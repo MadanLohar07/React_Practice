@@ -18,7 +18,7 @@ const [color, setColor] = useState("white")
         <button onClick={()=>{setColor("green")}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "green"}}>Green</button>
         <button onClick={()=>{setColor("orange")}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "orange"}}>Orange</button>
         <button onClick={()=>{setColor("purple")}} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "purple"}}>Purple</button>
-        {/*onclick in button always expect a function (() => {setColor("")}) inside it instead of reference (setColor("")). */}
+        {/*onclick event handler in button always expects a function (() => {setColor("")}) instead of reference (setColor), if we want to pass parameters inside it. */}
       </div>
       </div> 
     </div>
